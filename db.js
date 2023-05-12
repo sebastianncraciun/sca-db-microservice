@@ -7,12 +7,8 @@ initializeApp({
 
 const { getFirestore } = require('firebase-admin/firestore');
 
-const habits = getFirestore().collection('Habits');
-const tasks = getFirestore().collection('Tasks');
-const goals = getFirestore().collection('Goals');
+const scaDb = getFirestore().collection('SCA-DB');
 
 module.exports = {
-    habits,
-    tasks,
-    goals
+    scaDb
 } 
